@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+html, body { padding: 0; margin: 0; height: 100%; background: #0b0d0f; color: #e8eaed; }
+body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+.page { min-height: 100vh; display: flex; flex-direction: column; }
+.hero { display: grid; grid-template-rows: auto 1fr; gap: 16px; padding: 16px; max-width: 1400px; margin: 0 auto; width: 100%; }
+.copy { max-width: 1000px; }
+.copy h1 { margin: 0; font-size: clamp(28px, 2.8vw, 44px); letter-spacing: 0.2px; }
+.copy p { margin: 8px 0 0; opacity: 0.85; line-height: 1.5; }
+.controls { position: relative; border-radius: 14px; overflow: hidden; background: radial-gradient(1200px 600px at 70% 30%, #121418 0%, #0b0d0f 60%); border: 1px solid #1e232a; }
+.canvasWrap { position: relative; width: 100%; padding-bottom: min(60vh, 62%); }
+.canvasWrap > div, .canvasWrap canvas { position: absolute !important; inset: 0; }
+.ui { position: absolute; right: 14px; top: 14px; display: flex; gap: 8px; z-index: 5; backdrop-filter: blur(6px); background: rgba(10,14,18,0.45); border: 1px solid #2a313a; border-radius: 10px; padding: 8px; }
+.ui button, .ui select { appearance: none; background: #12161c; color: #e8eaed; border: 1px solid #2a313a; border-radius: 8px; padding: 8px 10px; cursor: pointer; font-size: 12px; }
+.ui button:hover { background: #151a20; }
+.badge { position: absolute; left: 14px; top: 14px; font-size: 11px; opacity: 0.8; padding: 6px 8px; border: 1px solid #2a313a; border-radius: 8px; background: rgba(10,14,18,0.45); }
+.footerNote { text-align: center; font-size: 12px; opacity: 0.7; margin: 10px 0 0; }
